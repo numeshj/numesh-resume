@@ -114,11 +114,16 @@
     @media (max-width: 760px) {
       .page { margin: 0; padding: 24px 16px; box-shadow: none; }
       h1 { font-size: 36px; }
-      .skills { grid-template-columns: repeat(2, 1fr); }
+      .skills { gap: 6px 8px; font-size: 13px; }
       .job { flex-direction: column; gap: 0; margin-bottom: 10px; }
       .two-col { grid-template-columns: 1fr; }
       .two-col section:first-child { border-right: none; padding-right: 0; }
       .two-col section:last-child { border-top: var(--rule); padding-left: 0; }
+    }
+
+    /* Keep 5 skill columns as long as possible; only reflow on phones */
+    @media (max-width: 560px) {
+      .skills { grid-template-columns: repeat(3, 1fr); }
     }
 
     /* ---------- Print (A4) ---------- */
@@ -215,7 +220,7 @@
     <section>
       <h2>Experience</h2>
       <div class="job">
-        <span>Associate Quality Assurance Engineer - Arimac Lanka (PVT) Ltd</span>
+        <span>Associate Quality Assurance Engineer - Finspace Team (Arimac Lanka (PVT) Ltd)</span>
         <span>- June 2026 – Present</span>
       </div>
       <div class="job">
@@ -231,6 +236,14 @@
     <!-- Project Highlights -->
     <section>
       <h2>Project Highlights</h2>
+
+      <h3>Sampath Bank Vishwa – Mobile Banking App &amp; Admin Portal (Current)</h3>
+      <ul class="bullets">
+        <li>Performing QA for a large-scale banking solution covering the customer mobile app and the admin portal.</li>
+        <li>Designing and executing manual test cases for functional, regression, and UI testing across both platforms.</li>
+        <li>Contributing to automation testing to support regression coverage and release readiness.</li>
+        <li>Handling defect management: identifying, documenting, tracking, and verifying fixes.</li>
+      </ul>
 
       <h3>IMI 3.0 Website / Progressive Web App (PWA)</h3>
       <ul class="bullets">
