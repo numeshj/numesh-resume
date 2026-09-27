@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numesh Jayamanne - CV (QA Engineer, HRIS domain)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #000;
+      --muted: #333;
+      --bg: #fff;
+      --rule: 2px solid #000;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.4;
+      color: var(--text);
+      background: #e9e9e9;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 24px auto;
+      padding: 36px 44px;
+      background: var(--bg);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .12);
+    }
+
+    a { color: inherit; }
+
+    /* ---------- Header ---------- */
+    h1 {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 44px;
+      line-height: 1.05;
+      letter-spacing: .5px;
+    }
+
+    .headline {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 14px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    .credentials { font-weight: bold; font-size: 13px; margin-top: 2px; }
+
+    .contact { margin-top: 8px; }
+
+    /* ---------- Sections ---------- */
+    section {
+      border-top: var(--rule);
+      margin-top: 12px;
+      padding-top: 10px;
+    }
+
+    h2 {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 16px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    h3 { font-size: 14px; }
+
+    h4 {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 13px;
+      font-weight: normal;
+      margin: 8px 0 3px;
+    }
+
+    .justify { text-align: justify; hyphens: auto; }
+
+    /* ---------- Expertise ---------- */
+    .expertise p { display: grid; grid-template-columns: 170px 1fr; gap: 8px; margin-bottom: 4px; }
+    .two-col h2 { letter-spacing: 1.5px; }
+
+    /* ---------- Roles ---------- */
+    .role { margin-bottom: 10px; }
+    .role-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .role-head .dates { white-space: nowrap; }
+    .role-sub { color: var(--muted); font-style: italic; margin-bottom: 3px; }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 3px; }
+
+    /* ---------- Education / Reference ---------- */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: var(--rule);
+      margin-top: 12px;
+    }
+    .two-col section { border-top: none; margin-top: 0; }
+    .two-col section:first-child { border-right: var(--rule); padding-right: 20px; }
+    .two-col section:last-child { padding-left: 20px; }
+
+    .item { margin-bottom: 8px; }
+    .item strong { display: block; }
+
+    /* ---------- Responsive ---------- */
+    @media screen and (max-width: 760px) {
+      .page { margin: 0; padding: 24px 16px; box-shadow: none; }
+      h1 { font-size: 34px; }
+      .expertise p { display: block; } .expertise strong { display: block; }
+      .role-head { flex-direction: column; gap: 0; }
+      .two-col { grid-template-columns: 1fr; }
+      .two-col section:first-child { border-right: none; padding-right: 0; }
+      .two-col section:last-child { border-top: var(--rule); padding-left: 0; }
+    }
+
+    /* ---------- Print (A4, 2 pages) ---------- */
+    @page { size: A4; margin: 12mm 13mm; }
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      .page { margin: 0; padding: 0; max-width: none; box-shadow: none; }
+      h1 { font-size: 38px; }
+      li, .item, .role-head { break-inside: avoid; }
+      h2, h3, h4, .role-head, .role-sub { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <!-- Header -->
+    <header>
+      <h1>Numesh Jayamanne</h1>
+      <p class="headline">QA Engineer | Manual, Automation &amp; API Testing</p>
+      <p class="credentials">ISTQB Certified Tester | BSc Software Engineering – First Class Honours</p>
+      <!-- TODO: replace with your real email / profile URLs -->
+      <p class="contact">
+        No 111, Elliott Road, Galle, Sri Lanka · <a href="tel:+94772258966">+94 77 225 8966</a> ·
+        <a href="mailto:your.email@gmail.com">Gmail</a> ·
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </header>
+
+    <!-- Profile -->
+    <section>
+      <h2>Professional Profile</h2>
+      <p class="justify">
+        QA Engineer with hands-on experience in functional, regression, API, UI, cross-platform and automation testing,
+        and domain knowledge across banking, gaming, real-time live events and HRIS. Currently testing a large-scale mobile
+        banking app and admin portal for Sampath Bank. Holds a BSc in Software Engineering with First Class Honours and the
+        ISTQB Foundation Level certification. Nearly 10 years of HR leadership, up to Head of HR at Weligama Bay Marriott
+        Resort &amp; Spa, plus a self-built HRIS, provide deep HR/HRIS domain knowledge, strong stakeholder communication
+        and process discipline.
+      </p>
+    </section>
+
+    <!-- Core expertise -->
+    <section class="expertise">
+      <h2>Core Expertise</h2>
+      <p><strong>Quality Engineering</strong> Manual Testing · Automation Testing · Functional · Regression · API · UI ·
+        Exploratory · WebSocket / Real-time · Cross-browser &amp; Cross-device · Test Case Design &amp; Execution ·
+        Defect Management · Agile QA</p>
+      <p><strong>Automation &amp; API Tools</strong> Playwright · Selenium · Postman · Bruno · RESTful APIs</p>
+      <p><strong>Languages &amp; Data</strong> JavaScript · C# / .NET 8 · PHP · SQL / MS SQL Server · MySQL · HTML / CSS ·
+        React · Angular</p>
+      <p><strong>Tools</strong> Git / GitHub · VS Code · Visual Studio · Figma · Adobe XD · Advanced Excel</p>
+      <p><strong>Domain Knowledge</strong> Banking (mobile app &amp; admin portal) · Mobile Gaming · Real-time Live Events ·
+        Web &amp; PWA · HRIS &amp; HR Operations (employee lifecycle, HR workflows, performance evaluation)</p>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="role">
+        <div class="role-head">
+          <h3>Associate Quality Assurance Engineer — Arimac Lanka (Pvt) Ltd</h3>
+          <span class="dates">June 2026 – Present</span>
+        </div>
+        <p class="role-sub">Finspace Team · Project: Sampath Bank Vishwa (mobile banking app &amp; admin portal)</p>
+        <ul>
+          <li>Perform QA for Sampath Bank Vishwa, a large-scale banking solution made up of a customer mobile app and an admin portal.</li>
+          <li>Design and execute functional, regression and UI test cases across mobile and web platforms.</li>
+          <li>Contribute to automation testing to strengthen regression coverage and release readiness.</li>
+          <li>Identify, document, track and verify defects throughout the development lifecycle.</li>
+          <li>Collaborate with developers and project stakeholders in an Agile team.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="role-head">
+          <h3>Associate Quality Assurance Engineer — IMI Games (Arimac Lanka (Pvt) Ltd)</h3>
+          <span class="dates">Dec 2025 – Apr 2026</span>
+        </div>
+        <div class="role-head">
+          <h3>Intern – QA / Software Engineer — IMI Games</h3>
+          <span class="dates">Jun 2025 – Dec 2025</span>
+        </div>
+
+        <h4>Mobile Gaming Platform — 60+ iOS &amp; Android Games</h4>
+        <ul>
+          <li>Performed end-to-end QA across 60+ iOS and Android mobile games, covering functional, regression and exploratory testing, authentication, leaderboards, rewards, game events and device/OS compatibility.</li>
+          <li>Ran device/OS matrix and network-condition testing to validate UI scaling, performance and stability.</li>
+          <li>Identified cross-game and backend issues (score synchronisation, data inconsistencies) and supported defect triage, fix verification and release regression evidence.</li>
+        </ul>
+
+        <h4>Hiru Star App — Multi-Platform Live TV Voting System</h4>
+        <ul>
+          <li>End-to-end QA across admin panels, Unity apps and mobile apps: real-time voting, judge scoring, golden vote logic, multi-round event rules and live LED display behaviour.</li>
+          <li>Performed WebSocket testing for real-time updates, synchronisation and event-driven UI behaviour.</li>
+          <li>Tested across DEV, UAT, Staging and production-like environments; verified backup/recovery flows and ran parallel-run rehearsals (Admin + Unity + mobile) for zero-error live broadcasts.</li>
+        </ul>
+
+        <h4>IMI 3.0 Website / Progressive Web App (PWA)</h4>
+        <ul>
+          <li>End-to-end QA for a scalable gamified-marketing web platform and PWA, covering functional, regression, UI and API testing.</li>
+          <li>Validated APIs for Coin Management, Leaderboards, Rewards and Spin Wheel: data integrity, business logic and response-time SLAs.</li>
+          <li>Owned defect management end to end (identify, document, track, RCA support, fix verification), plus cross-browser/cross-device checks and QA documentation (test cases, test data, defect logs, execution reports).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HR technology project -->
+    <section>
+      <h2>Domain Project — HRIS</h2>
+      <div class="role-head">
+        <h3>Interli HRIS — Human Resources Information System</h3>
+      </div>
+      <p class="role-sub">Final-Year Software Engineering Project · London Metropolitan University · PHP, MySQL, JavaScript, HTML, CSS</p>
+      <ul>
+        <li>Designed and developed an HRIS combining HR domain knowledge with software engineering principles, including HR workflows and employee management.</li>
+        <li>Implemented rule-based performance evaluation using weighted scoring, and operational forecasting from business and operational data.</li>
+        <li>Built administrative and employee-facing interfaces; applied database design and system testing throughout.</li>
+      </ul>
+    </section>
+
+    <!-- HR experience -->
+    <section>
+      <h2>Previous Experience — Human Resources</h2>
+      <div class="role-head">
+        <h3>Hospitality Human Resources · Sri Lanka</h3>
+        <span class="dates">2014 – Jul 2023</span>
+      </div>
+      <ul>
+        <li><strong>Manager – Human Resources (Head of HR)</strong> — Weligama Bay Marriott Resort &amp; Spa; Araliya Beach Resort &amp; Spa</li>
+        <li><strong>Senior Executive HR / Assistant Manager – HR</strong> — The Kingsbury PLC</li>
+        <li><strong>Welfare Officer / Junior Executive (HR)</strong> — Cinnamon Grand Colombo</li>
+        <li>Led HR operations and employee processes, working with senior management and operational departments to turn business requirements into HR processes and documentation.</li>
+      </ul>
+    </section>
+
+    <!-- Education & References -->
+    <div class="two-col">
+      <section>
+        <h2>Education &amp; Certifications</h2>
+        <div class="item">
+          <strong>BSc (Hons) Software Engineering — First Class Honours</strong>
+          London Metropolitan University
+        </div>
+        <div class="item">
+          <strong>ISTQB Certified Tester — Foundation Level</strong>
+          Completed January 2026
+        </div>
+        <div class="item">
+          <strong>Pearson BTEC HND in Computer Science</strong>
+          Specialisation: Software Engineering
+        </div>
+        <div class="item">
+          <strong>Professional Qualification in Human Resource Management</strong>
+          CIPM
+        </div>
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <div class="item">
+          <strong>Kalana Dissanayake</strong>
+          CEO – IMI Games<br>
+          <a href="tel:+94764429367">+94 76 442 9367</a> ·
+          <a href="mailto:kalana@arimaclanka.com">kalana@arimaclanka.com</a>
+        </div>
+        <div class="item">
+          <strong>Anuradha Ranasinghe</strong>
+          Senior Software Engineer – IMI Games<br>
+          <a href="tel:+94767140151">+94 76 714 0151</a> ·
+          <a href="mailto:anuranasinghe151@gmail.com">anuranasinghe151@gmail.com</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+</body>
+</html>
