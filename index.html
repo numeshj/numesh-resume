@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numesh Jayamanne - Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #000;
+      --bg: #fff;
+      --rule: 2px solid #000;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      line-height: 1.45;
+      color: var(--text);
+      background: #e9e9e9;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 24px auto;
+      padding: 40px 44px;
+      background: var(--bg);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .12);
+    }
+
+    a { color: inherit; }
+
+    /* ---------- Header ---------- */
+    h1 {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 52px;
+      line-height: 1.05;
+      letter-spacing: .5px;
+      margin-bottom: 14px;
+    }
+
+    .contact p { margin-bottom: 6px; }
+
+    /* ---------- Sections ---------- */
+    section {
+      border-top: var(--rule);
+      padding: 16px 0 18px;
+    }
+
+    h2 {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 18px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-family: 'Archivo Black', Arial Black, sans-serif;
+      font-size: 15px;
+      font-weight: normal;
+      margin: 14px 0 6px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: .5px;
+      margin: -4px 0 14px;
+    }
+
+    .justify { text-align: justify; hyphens: auto; }
+
+    /* ---------- Competencies ---------- */
+    .skills {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 6px 12px;
+    }
+
+    /* ---------- Experience ---------- */
+    .job {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .job span:last-child { font-weight: normal; white-space: nowrap; }
+
+    /* ---------- Projects ---------- */
+    ul.bullets { padding-left: 24px; }
+    ul.bullets li { margin-bottom: 6px; }
+
+    /* ---------- Education / Reference ---------- */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: var(--rule);
+    }
+    .two-col section { border-top: none; }
+    .two-col section:first-child { border-right: var(--rule); padding-right: 20px; }
+    .two-col section:last-child { padding-left: 20px; }
+
+    .item { margin-bottom: 16px; }
+    .item strong { display: block; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 760px) {
+      .page { margin: 0; padding: 24px 16px; box-shadow: none; }
+      h1 { font-size: 36px; }
+      .skills { grid-template-columns: repeat(2, 1fr); }
+      .job { flex-direction: column; gap: 0; margin-bottom: 10px; }
+      .two-col { grid-template-columns: 1fr; }
+      .two-col section:first-child { border-right: none; padding-right: 0; }
+      .two-col section:last-child { border-top: var(--rule); padding-left: 0; }
+    }
+
+    /* ---------- Print (A4) ---------- */
+    @page { size: A4; margin: 12mm; }
+    @media print {
+      body { background: #fff; font-size: 13px; }
+      .page { margin: 0; padding: 0; max-width: none; box-shadow: none; }
+      h1 { font-size: 44px; }
+      section, .item, ul.bullets li { break-inside: avoid; }
+      h3 { break-after: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <!-- Header -->
+    <header class="contact">
+      <h1>Numesh Jayamanne</h1>
+      <!-- TODO: replace # with your real email / profile URLs -->
+      <p>
+        <a href="mailto:your.email@gmail.com">Gmail</a> ·
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+      <p>No 111, Elliott Road, Galle · <a href="tel:+94772258966">0772258966</a></p>
+    </header>
+
+    <!-- Summary -->
+    <section>
+      <h2>Manual / Automation QA Engineer</h2>
+      <p class="subtitle">(ISTQB Certified Tester)</p>
+      <p class="justify">
+        Transitioning from a leadership role in Human Resources to pursue my passion for technology, I bring valuable
+        experience from my time as Head of Human Resources at Marriott International. After completing a BSc in Software
+        Engineering with First Class Honours, I am eager to apply my leadership, problem-solving, and strategic thinking
+        skills to the field of software engineering. As a certified ISTQB tester, I further strengthen my foundation in
+        quality assurance and software testing.
+      </p>
+    </section>
+
+    <!-- Key Competencies -->
+    <section>
+      <h2>Key Competencies</h2>
+      <ul class="skills">
+        <li>Manual Testing</li>
+        <li>Automation Testing</li>
+        <li>Selenium</li>
+        <li>Playwright</li>
+        <li>RESTful APIs</li>
+        <li>Postman</li>
+        <li>Bruno</li>
+        <li>Tester</li>
+        <li>GitHub</li>
+        <li>HTML, CSS</li>
+        <li>Adobe XD, Figma</li>
+        <li>JavaScript</li>
+        <li>MS SQL Server</li>
+        <li>Advanced Excel</li>
+        <li>React</li>
+        <li>Angular</li>
+        <li>PHP</li>
+        <li>Documentation</li>
+        <li>Team Management</li>
+        <li>Task Management</li>
+        <li>Defect Mngmt.</li>
+        <li>C#</li>
+        <li>.NET 8</li>
+        <li>VS Code</li>
+        <li>Visual Studio</li>
+      </ul>
+    </section>
+
+    <!-- Career Pivot -->
+    <section>
+      <h2>Career Pivot: HR Leadership → QA Engineering</h2>
+      <p class="justify">
+        Moving from Human Resources Management into IT and Quality Assurance is a major career change I pursued
+        intentionally. I’m motivated by continuous learning and staying aligned with global technology trends, and I
+        bring strong stakeholder communication, process discipline, and document management into fast-paced Agile QA
+        environments.
+      </p>
+      <br>
+      <p class="justify">
+        <strong>2014 – Jul 2023:</strong> Hospitality HR experience across <strong>Cinnamon Grand Colombo</strong> as
+        <strong>Welfare Officer / Junior Executive (HR)</strong>, <strong>The Kingsbury PLC</strong> as
+        <strong>Senior Executive Human Resources</strong> and <strong>Assistant Manager – Human Resources</strong>, and
+        <strong>Manager – Human Resources (Head of HR)</strong> roles at <strong>Araliya Beach Resort &amp; Spa</strong>
+        and <strong>Weligama Bay Marriott Resort &amp; Spa</strong> (resigned Jul 2023).
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+      <div class="job">
+        <span>Associate Quality Assurance Engineer - Arimac Lanka (PVT) Ltd</span>
+        <span>- June 2026 – Present</span>
+      </div>
+      <div class="job">
+        <span>Associate Quality Assurance Engineer - IMI Games (Arimac Lanka (PVT) Ltd)</span>
+        <span>- Dec 2025 – Apr 2026</span>
+      </div>
+      <div class="job">
+        <span>Intern - QA / Software Engineer at IMI Games</span>
+        <span>- Jun 2025 – Dec 2025</span>
+      </div>
+    </section>
+
+    <!-- Project Highlights -->
+    <section>
+      <h2>Project Highlights</h2>
+
+      <h3>IMI 3.0 Website / Progressive Web App (PWA)</h3>
+      <ul class="bullets">
+        <li>Performed end-to-end QA for a scalable web platform &amp; PWA (gamified marketing solutions and interactive user experiences).</li>
+        <li>Designed and executed test cases for functional, regression, UI, and API testing.</li>
+        <li>Validated APIs for Coin Management, Leaderboards, Rewards, and Spin Wheel (data integrity, business logic, and response-time SLAs).</li>
+        <li>Handled defect management end-to-end (identify, document, track, RCA support, and fix verification) plus cross-browser/cross-device checks.</li>
+        <li>Maintained document management for QA artifacts: test cases, test data, defect logs, and execution reports (Agile).</li>
+      </ul>
+
+      <h3>Hiru Star App – Multi-Platform Entertainment Voting System</h3>
+      <ul class="bullets">
+        <li>End-to-end QA for a multi-platform solution: Admin panels, Unity apps, and mobile applications.</li>
+        <li>Tested live-event workflows (real-time voting, judge scoring, golden vote logic, multi-round event rules) and live LED display behavior.</li>
+        <li>Performed WebSocket testing for real-time updates, synchronization, and event-driven UI behavior.</li>
+        <li>Conducted testing across multiple environments (DEV/UAT/Staging/production-like), validating environment-specific configurations, data, and release readiness.</li>
+        <li>Verified backup/recovery flows and executed parallel-run rehearsals (Admin + Unity + mobile) to ensure zero-error readiness for live TV programs.</li>
+        <li>Owned defect and document management: test cases, evidence, defect logs, and execution reports.</li>
+      </ul>
+
+      <h3>Mobile Gaming Platform QA</h3>
+      <ul class="bullets">
+        <li>End-to-end QA for 60+ mobile games across iOS and Android.</li>
+        <li>Functional, regression, and exploratory testing covering gameplay, authentication, leaderboards, rewards, and game events.</li>
+        <li>Device/OS matrix and network-condition testing to validate UI scaling, performance, and stability.</li>
+        <li>Identified cross-game/backend issues (score synchronization, data inconsistencies) and supported defect triage and fix verification.</li>
+        <li>Maintained document management for releases: test cases, defect reports, and regression evidence.</li>
+      </ul>
+    </section>
+
+    <!-- Education & Reference -->
+    <div class="two-col">
+      <section>
+        <h2>Education &amp; Certifications</h2>
+
+        <div class="item">
+          <strong>ISTQB Certified Tester – Foundation Level</strong>
+          Completed Jan 2026
+        </div>
+
+        <div class="item">
+          <strong>Bachelor of Engineering</strong>
+          Software Engineering - First Class Honours<br>
+          London Metropolitan University
+        </div>
+
+        <div class="item">
+          <strong>Completed Pearson HND in computer science – Specialized in Software Engineering</strong>
+          Pearson BTEC
+        </div>
+
+        <div class="item">
+          <strong>Professional Qualification Course in Human Resources management</strong>
+          CIPM
+        </div>
+
+        <p>Date : 10 April 2026</p>
+      </section>
+
+      <section>
+        <h2>Reference</h2>
+
+        <div class="item">
+          <strong>Kalana Dissanayake</strong>
+          CEO - IMI Games<br>
+          <a href="tel:+94764429367">+94 76 442 9367</a><br>
+          <a href="mailto:kalana@arimaclanka.com">kalana@arimaclanka.com</a>
+        </div>
+
+        <div class="item">
+          <strong>Anuradha Ranasinghe</strong>
+          Senior Software Engineer - IMI Games<br>
+          <a href="tel:+94767140151">+9476 714 0151</a><br>
+          <a href="mailto:anuranasinghe151@gmail.com">anuranasinghe151@gmail.com</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+</body>
+</html>
